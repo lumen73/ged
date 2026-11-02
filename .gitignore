@@ -1,0 +1,54 @@
+# Configuration locale et secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.local.php
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Documents importés dans la GED : données privées des utilisateurs
+/fichiers/*
+!/fichiers/.htaccess
+!/fichiers/.gitkeep
+/ged-private-files/
+/uploads/
+/private-uploads/
+
+# Bases locales, sauvegardes et exports de données
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.dump
+*.bak
+*.backup
+*-dump.sql
+*_dump.sql
+backup/
+backups/
+
+# Dépendances et fichiers générés
+/vendor/
+/node_modules/
+/cache/
+/.cache/
+/tmp/
+/temp/
+/logs/
+*.log
+/.phpunit.cache/
+/dist/
+/build/
+
+# Fichiers système et éditeurs
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
